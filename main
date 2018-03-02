@@ -12,3 +12,27 @@ frame = simplegui.create_frame('Testing', 600, 600)
 frame.set_canvas_background("Black")
 frame.set_draw_handler(draw_handler)
 frame.start() 
+
+ghosts:
+
+import simplegui
+def draw_handler(canvas):
+    #pink
+    canvas.draw_circle((80,250),40,50,"Pink","Pink")
+    canvas.draw_polygon([(20,250),(50,290),(50,320),(20,320)],5,"Pink","Pink")
+   
+	canvas.draw_polygon([(20,250),(50,290),(50,320),(20,320)],5,"Pink","Pink")
+
+    #blue
+    canvas.draw_circle((225,250),40,50,"rgb(88,223,203)","rgb(88,223,203)")
+    
+    #red
+    canvas.draw_circle((375,250),40,50,"rgb(247,54,34)","rgb(247,54,34)")
+    
+    #orange
+    canvas.draw_circle((520,250),40,50,"rgb(252,190,95)","rgb(252,190,95)")    
+    
+frame = simplegui.create_frame('Testing', 600, 600)
+frame.set_canvas_background("Black")
+frame.set_draw_handler(draw_handler)
+frame.start() 
