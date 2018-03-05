@@ -27,7 +27,13 @@ def draw_handler(canvas):
     canvas.draw_circle((45,230),5,20,"White","White")
     canvas.draw_circle((45,235),5,20,"White","White")
     canvas.draw_circle((90,230),5,20,"White","White")
-    canvas.draw_circle((90,235),5,20,"White","White")    
+    canvas.draw_circle((90,235),5,20,"White","White")  
+   
+    canvas.draw_circle((78,230),5,5,"Blue","Blue")
+    canvas.draw_circle((78,233),5,5,"Blue","Blue")
+    
+    canvas.draw_circle((33,230),5,5,"Blue","Blue")
+    canvas.draw_circle((33,233),5,5,"Blue","Blue")
 
     #blue
     canvas.draw_circle((225,250),40,50,"rgb(88,223,203)","rgb(88,223,203)")
