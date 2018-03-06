@@ -37,9 +37,40 @@ def draw_handler(canvas):
 
     #blue
     canvas.draw_circle((225,250),40,50,"rgb(88,223,203)","rgb(88,223,203)")
+    canvas.draw_polygon([(165,250),(285,250),(285,320),(165,320)],5,"rgb(88,223,203)","rgb(88,223,203)")
+    canvas.draw_polygon([(175,320),(185,310),(195,320)],10,"Black","Black")
+    canvas.draw_polygon([(215,320),(225,310),(235,320)],10,"Black","Black")
+    canvas.draw_polygon([(255,320),(265,310),(275,320)],10,"Black","Black")
+    
+    canvas.draw_circle((190,230),5,20,"White","White")
+    canvas.draw_circle((190,235),5,20,"White","White")
+    canvas.draw_circle((235,230),5,20,"White","White")
+    canvas.draw_circle((235,235),5,20,"White","White")  
+   
+    canvas.draw_circle((235,215),5,5,"Blue","Blue")
+    canvas.draw_circle((235,218),5,5,"Blue","Blue")
+    
+    canvas.draw_circle((190,215),5,5,"Blue","Blue")
+    canvas.draw_circle((190,218),5,5,"Blue","Blue")    
     
     #red
     canvas.draw_circle((375,250),40,50,"rgb(247,54,34)","rgb(247,54,34)")
+    canvas.draw_polygon([(165,250),(285,250),(285,320),(165,320)],5,"rgb(88,223,203)","rgb(88,223,203)")
+    canvas.draw_polygon([(175,320),(185,310),(195,320)],10,"Black","Black")
+    canvas.draw_polygon([(215,320),(225,310),(235,320)],10,"Black","Black")
+    canvas.draw_polygon([(255,320),(265,310),(275,320)],10,"Black","Black")
+    
+    canvas.draw_circle((190,230),5,20,"White","White")
+    canvas.draw_circle((190,235),5,20,"White","White")
+    canvas.draw_circle((235,230),5,20,"White","White")
+    canvas.draw_circle((235,235),5,20,"White","White")  
+   
+    canvas.draw_circle((235,215),5,5,"Blue","Blue")
+    canvas.draw_circle((235,218),5,5,"Blue","Blue")
+    
+    canvas.draw_circle((190,215),5,5,"Blue","Blue")
+    canvas.draw_circle((190,218),5,5,"Blue","Blue")    
+        
     
     #orange
     canvas.draw_circle((520,250),40,50,"rgb(252,190,95)","rgb(252,190,95)")    
