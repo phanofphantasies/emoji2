@@ -6,7 +6,8 @@ def draw_handler(canvas):
     global y
     x = x + 10
     if (x >= 600):
-        x = 50
+        x = -600
+    y = y + 10
     #pink
     canvas.draw_circle((80+x,250),40,50,"Pink","Pink")
     canvas.draw_polygon([(20+x,250),(140+x,250),(140+x,320),(20+x,320)],5,"Pink","Pink")
