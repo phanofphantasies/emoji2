@@ -1,0 +1,86 @@
+import simplegui
+x = 50
+y = 50
+def draw_handler(canvas):
+    global x
+    global y
+    x = x + 10
+    if (x >= 600):
+        x = 50
+    #pink
+    canvas.draw_circle((80+x,250),40,50,"Pink","Pink")
+    canvas.draw_polygon([(20+x,250),(140+x,250),(140+x,320),(20+x,320)],5,"Pink","Pink")
+    canvas.draw_polygon([(30+x,320),(40+x,310),(50+x,320)],10,"Black","Black")
+    canvas.draw_polygon([(70+x,320),(80+x,310),(90+x,320)],10,"Black","Black")
+    canvas.draw_polygon([(110+x,320),(120+x,310),(130+x,320)],10,"Black","Black")
+    
+    canvas.draw_circle((45+x,230),5,20,"White","White")
+    canvas.draw_circle((45+x,235),5,20,"White","White")
+    canvas.draw_circle((90+x,230),5,20,"White","White")
+    canvas.draw_circle((90+x,235),5,20,"White","White")  
+   
+    canvas.draw_circle((78+x,230),5,5,"Blue","Blue")
+    canvas.draw_circle((78+x,233),5,5,"Blue","Blue")
+    
+    canvas.draw_circle((33+x,230),5,5,"Blue","Blue")
+    canvas.draw_circle((33+x,233),5,5,"Blue","Blue")
+
+    #blue
+    canvas.draw_circle((225+x,250),40,50,"rgb(88,223,203)","rgb(88,223,203)")
+    canvas.draw_polygon([(165+x,250),(285+x,250),(285+x,320),(165+x,320)],5,"rgb(88,223,203)","rgb(88,223,203)")
+    canvas.draw_polygon([(175+x,320),(185+x,310),(195+x,320)],10,"Black","Black")
+    canvas.draw_polygon([(215+x,320),(225+x,310),(235+x,320)],10,"Black","Black")
+    canvas.draw_polygon([(255+x,320),(265+x,310),(275+x,320)],10,"Black","Black")
+    
+    canvas.draw_circle((190+x,230),5,20,"White","White")
+    canvas.draw_circle((190+x,235),5,20,"White","White")
+    canvas.draw_circle((235+x,230),5,20,"White","White")
+    canvas.draw_circle((235+x,235),5,20,"White","White")  
+   
+    canvas.draw_circle((235+x,220),5,5,"Blue","Blue")
+    canvas.draw_circle((235+x,223),5,5,"Blue","Blue")
+    
+    canvas.draw_circle((190+x,220),5,5,"Blue","Blue")
+    canvas.draw_circle((190+x,223),5,5,"Blue","Blue")    
+    
+    #red
+    canvas.draw_circle((375+x,250),40,50,"rgb(247,54,34)","rgb(247,54,34)")
+    canvas.draw_polygon([(315+x,250),(435+x,250),(435+x,320),(315+x,320)],5,"rgb(247,54,34)","rgb(247,54,34)")
+    canvas.draw_polygon([(325+x,320),(335+x,310),(345+x,320)],10,"Black","Black")
+    canvas.draw_polygon([(365+x,320),(375+x,310),(385+x,320)],10,"Black","Black")
+    canvas.draw_polygon([(405+x,320),(415+x,310),(425+x,320)],10,"Black","Black")
+    
+    canvas.draw_circle((340+x,230),5,20,"White","White")
+    canvas.draw_circle((340+x,235),5,20,"White","White")
+    canvas.draw_circle((385+x,230),5,20,"White","White")
+    canvas.draw_circle((385+x,235),5,20,"White","White")  
+   
+    canvas.draw_circle((395+x,225),5,5,"Blue","Blue")
+    canvas.draw_circle((395+x,228),5,5,"Blue","Blue")
+    
+    canvas.draw_circle((350+x,225),5,5,"Blue","Blue")
+    canvas.draw_circle((350+x,228),5,5,"Blue","Blue")    
+        
+    
+    #orange
+    canvas.draw_circle((520+x,250),40,50,"rgb(252,190,95)","rgb(252,190,95)")  
+    canvas.draw_polygon([(460+x,250),(580+x,250),(580+x,320),(460+x,320)],5,"rgb(252,190,95)","rgb(252,190,95)")
+    canvas.draw_polygon([(470+x,320),(480+x,310),(490+x,320)],10,"Black","Black")
+    canvas.draw_polygon([(510+x,320),(520+x,310),(530+x,320)],10,"Black","Black")
+    canvas.draw_polygon([(550+x,320),(560+x,310),(570+x,320)],10,"Black","Black")
+    
+    canvas.draw_circle((495+x,230),5,20,"White","White")
+    canvas.draw_circle((495+x,235),5,20,"White","White")
+    canvas.draw_circle((540+x,230),5,20,"White","White")
+    canvas.draw_circle((540+x,235),5,20,"White","White")  
+   
+    canvas.draw_circle((540+x,240),5,5,"Blue","Blue")
+    canvas.draw_circle((540+x,243),5,5,"Blue","Blue")
+    
+    canvas.draw_circle((495+x,240),5,5,"Blue","Blue")
+    canvas.draw_circle((495+x,243),5,5,"Blue","Blue")      
+    
+frame = simplegui.create_frame('Testing', 600, 600)
+frame.set_canvas_background("Black")
+frame.set_draw_handler(draw_handler)
+frame.start() 
